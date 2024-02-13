@@ -1,42 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  background-color: black;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border-radius: 5px;
+  align-self: center;
+  font-size: larger;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-menu {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  background-image: url("./assets/menuStill.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.card {
-  padding: 2em;
+.title {
+  align-self: start;
+  padding: 20px;
+  color: #EEDDDD;
 }
 
-.read-the-docs {
-  color: #888;
+.HUD {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
 }
+
+.top-left {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.top-right {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 5px;
+  left: 5x;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#canvas-container {
+  width: 100vw;
+  height: 100vh;
+}
+
